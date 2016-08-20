@@ -19,11 +19,13 @@
         font-size: x-large;
         font-weight: bold;
       }
-      h3 {
-        font-size: 100%;
+      .section {
         font-style: italic;
         text-decoration: underline;
-        font-weight: normal;
+      }
+      .section::after {
+        content: " :";
+        text-decoration: none !important;
       }
       #title, .important {
         padding: 0.5em;
@@ -82,8 +84,8 @@
         <li>le troisième est presque toujours associé à la lettre <b>I</b>
         <li>le quatrième est associé soit à la lettre <b>A</b>, soit à la lettre <b>E</b>.
       </ul>
-      <h3>Important :</h3>
       <p>
+        <span class="section">Important</span>
         de nos jours, le son /œ̃/ a pratiquement disparu et est remplacé par le son /ɛ̃/.
         On peut donc remplacer les quatre règles d’orthographe ci-dessus par les trois suivantes :
       </p>
@@ -97,11 +99,11 @@
       <p>
         Ce sont celles que l’on retiendra.
       </p>
-      <h3>Important :</h3>
       <p>
+        <span class="section">Important</span>
         pour que toutes ces graphies se prononcent sous forme d’une nasale, il faut qu’elles soient suivies d’une consonne différente de N ou M ou par rien. Si elles sont suivies d’une voyelle, d’un N ou d’un M, ces graphies ne sont normalement pas nasalisées.
       </p>
-      <h3>Exemples :</h3>
+      <p><span class="section">Exemples</span></p>
       <p>Il n’y a pas de nasale dans les mots ci-dessous.</p>
       <ul>
         <li><a href="javascript:pls('inimitable')">inimitable</a> : /ɪˈnɪmɪtəbəl/
@@ -138,31 +140,29 @@
         <li>devant un B, un P ou un M, on choisit la graphie se terminant par M.
         <li>devant toute autre lettre ou à la fin d’un mot, on choisit la graphie utilisant le N.
       </ol>
-      <h3>Exemples :</h3>
+      <p><span class="section">Exemples</span></p>
       <ol>
         <li><a href="javascript:pls('pompier')">pompier</a>, <a href="javascript:pls('plomb')">plomb</a>, <a href="javascript:pls('ombre')">ombre</a>, <a href="javascript:pls('ample')">ample</a>, <a href="javascript:pls('ambre')">ambre</a>, <a href="javascript:pls('emploi')">emploi</a>, <a href="javascript:pls('embolie')">embolie</a>, <a href="javascript:pls('emmener')">emmener</a>, <a href="javascript:pls('emmagasiner')">emmagasiner</a>, <a href="javascript:pls('impossible')">impossible</a>, <a href="javascript:pls('imberbe')">imberbe</a>, <a href="javascript:pls('impitoyable')">impitoyable</a>, <a href="javascript:pls('immangeable')">immangeable</a>, <a href="javascript:pls('humble')">humble</a>.
         <li><a href="javascript:pls('onde')">onde</a>, <a href="javascript:pls('marron')">marron</a>, <a href="javascript:pls('danse')">danse, dense</a>, <a href="javascript:pls('élan')">élan</a>, <a href="javascript:pls('dinde')">dinde</a>, <a href="javascript:pls('marin')">marin</a>, <a href="javascript:pls('défunt')">défunt</a>, <a href="javascript:pls('jungle')">jungle</a>
       </ol>
-      <h3>Exceptions :</h3>
       <p>
+        <span class="section">Exceptions</span>
         <a href="javascript:pls('comte')">comte</a>, <a href="javascript:pls('comté')">comté</a>, <a href="javascript:pls('parfum')">parfum</a>, nom, prénom, bonbon
       </p>
-      <h3>Important :</h3>
       <p>
+        <span class="section">Important</span>
         il arrive que les graphies « enn » et « emm » se prononce <a href="javascript:pls('enn')">/ɑ̃n/</a> et <a href="javascript:pls('emm')">/ɑ̃m/</a>, contrairement à la règle mentionnée plus haut, qui veut que ces graphies se prononcent <a href="javascript:pls('enn2')">/ɛn/</a> et <a href="javascript:pls('emm2')">/ɛm/</a> (comme dans : <a href="javascript:pls('ennemi')">ennemi</a>, <a href="javascript:pls('rennes')">Rennes</a>, <a href="javascript:pls('lemme')">lemme</a>…, il s’agit de la règle du E placée devant une consonne double). Ces exceptions se retrouvent souvent dans les mots formés par l’ajout du suffixe « en » devant un radical commençant par N ou M.
       </p>
-      <h3>Exemples :</h3>
       <p>
+        <span class="section">Exemples</span>
         <a href="javascript:pls('emmurer')">emmurer</a>, <a href="javascript:pls('emmener')">emmener</a>, <a href="javascript:pls('emmerder')">emmerder</a>, <a href="javascript:pls('enneiger')">enneiger</a>, <a href="javascript:pls('ennoblir')">ennoblir</a><br>
         Et sans raison connue, le verbe <i>ennuyer</i> commence aussi par une nasale.
       </p>
       <p>
         L’ajout du préfixe « in » devant un radical commençant par M, change le N du préfixe en M et, suivant la règle de prononciation énoncée plus haut, ce « im » n’est pas nasalisé.
       </p>
-      <h3>Exemples :</h3>
-      <p><a href="javascript:pls('immobile')">immobile</a>, <a href="javascript:pls('immuable')">immuable</a>, <a href="javascript:pls('immortel')">immortel</a>, <a href="javascript:pls('immaculé')">immaculé</a>…</p>
-      <h3>Exceptions :</h3>
-      <p>Nous retiendrons trois cas de mot où la graphie « imm » se prononce /ɛ̃m/ au lieu de /ɪm/ : <a href="javascript:pls('immangeable')">immangeable</a>, <a href="javascript:pls('immanquable')">immanquable</a>, <a href="javascript:pls('immettable')">immettable</a>.</p>
+      <p><span class="section">Exemples</span> <a href="javascript:pls('immobile')">immobile</a>, <a href="javascript:pls('immuable')">immuable</a>, <a href="javascript:pls('immortel')">immortel</a>, <a href="javascript:pls('immaculé')">immaculé</a>…</p>
+      <p><span class="section">Exceptions</span> Nous retiendrons trois cas de mot où la graphie « imm » se prononce /ɛ̃m/ au lieu de /ɪm/ : <a href="javascript:pls('immangeable')">immangeable</a>, <a href="javascript:pls('immanquable')">immanquable</a>, <a href="javascript:pls('immettable')">immettable</a>.</p>
       <p>
         Enfin, on notera trois exceptions de mots où le son /ɑ̃/ s’écrit « aon » : <a href="javascript:pls('faon')">faon</a>, <a href="javascript:pls('paon')">paon</a>, <a href="javascript:pls('taon')">taon</a>, ainsi que le son /ɛ̃/ qui s’écrit « eun » dans <a href="javascript:pls('à-jeun')">à jeun</a>.
       </p>
